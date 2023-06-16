@@ -4,6 +4,30 @@
     box-sizing: border-box;
     transition: .2s linear;
 }
+body {
+  margin-right: 0; /* Remove the right margin */
+}
+
+nav {
+  /* Adjust the space around the navigation links */
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+#Home > div {
+  width: 30%;
+  margin-right: 20px; /* Adjust the right margin as needed */
+}
+
+.right img {
+  width: 100%; /* Adjust the width of the image as needed */
+  margin-left: 0; /* Remove the negative left margin */
+}
+
+.wrapper {
+  padding-right: 10%; /* Adjust the right padding as needed */
+}
+
 section{
     width: 100%;
     min-height: 80vh;
