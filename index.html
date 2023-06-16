@@ -1,120 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stylesheet.css">
-</head> 
+</head>
+
 <body>
-    <header>
-    <nav>
-        <div class="left">Naveed Zaman<span> Khan</span> </div>
-        <div class="right"></div>
-        <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#AboutMe">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
+    <header id="head">
+        <nav>
+            <div class="left">Naveed Zaman<span> Khan</span> </div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="#head">Home</a></li>
+                <li><a href="#AboutMe">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
 
-    </nav>
+        </nav>
 
-</header>
-    <section id="Home">
-        <div class="left">
-            <h4><span class="Iam"> I'm a</span></h4>
+    </header>
+
+    <div class="flex-box-container" style="justify-content: space-around;">
+            
+        <div style="margin-top: 200px;">
+            <h4 class="Iam">
+                I'm a
+            </h4>
+            <h3 class="Web">
+                Software Engineer
+            </h3>
+            <a href="#contact" class="btn">
+                Contact Me
+            </a>    
         </div>
-            <div>
-                <h3><span class="Web">Software Engineer</span></h3>
-            </div>
-    <div>  <a href="#contact" class="btn">Contact Me</a></div>
-       
-        <div class="right">
-        <img src="images/web2.png" alt="developer" />
-             </div>
 
-    </section>
-    <section id="AboutMe">
-        <div class="left2">
+        <div style="margin-top: 200px;">
+            <img src="images/web2.png" alt="developer" width="500" />
+        </div>
+        
+    </div>
+    <div id="AboutMe">
+        <div>
             <h1 class="Abt">About Me</h1>
-           <div class="paragraph"><p>
-                My Name Is Naveed Zaman Khan.
-                Currently I am serving in I3RL.
-                Before this i served in MCB Bank Ltd as FVP since 2006. 21 years rich experience of SBP
-                regulatory reporting, MIS/Database developments and Software development & deployment. 
-                In leading institutions of Pakistan.                
-                Proficient in developing and managing Bank’s Management Information System (MIS) to be 
-                used for SBP regulatory reporting & inspection, Analytics, internal & external auditors,
-                eCIB reporting and to mitigate any sort of stakeholders’ requirements.
-                
-            </p></div> 
         </div>
+        <div style="padding-top: 50px;" class="flex-container">
+            
+            <div class="flex-child magenta">
+                <div class="paragraph">
+                    <p>
+                        My Name Is Naveed Zaman Khan.
+                        Currently I am serving in I3RL.
+                        Before this i served in MCB Bank Ltd as FVP since 2006. 21 years rich experience of SBP
+                        regulatory reporting, MIS/Database developments and Software development & deployment.
+                        In leading institutions of Pakistan.
+                        Proficient in developing and managing Bank’s Management Information System (MIS) to be
+                        used for SBP regulatory reporting & inspection, Analytics, internal & external auditors,
+                        eCIB reporting and to mitigate any sort of stakeholders’ requirements.
+                    </p>
+                </div>
+            
+            </div>
+            
+            <div class="flex-child green">
+                <img src="images/walidsb.png" class="abtImg" alt="developer" width="400" height="400" />
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- <div id="AboutMe">
+        <h1 class="Abt">About Me</h1>
+        
+        <div class="left2">
+            <div class="paragraph">
+                <p>
+                    My Name Is Naveed Zaman Khan.
+                    Currently I am serving in I3RL.
+                    Before this i served in MCB Bank Ltd as FVP since 2006. 21 years rich experience of SBP
+                    regulatory reporting, MIS/Database developments and Software development & deployment.
+                    In leading institutions of Pakistan.
+                    Proficient in developing and managing Bank’s Management Information System (MIS) to be
+                    used for SBP regulatory reporting & inspection, Analytics, internal & external auditors,
+                    eCIB reporting and to mitigate any sort of stakeholders’ requirements.
+                </p>
+            </div>
+        </div>
+
         <div class="right2">
-            <img src="images/walidsb.png" alt="developer"width="400" height="400"/>
+            <img src="images/walidsb.png" alt="developer" width="400" height="400" />
         </div>
-    </section>
-    <section id="skills">
-      <div class="wrapper">  <h1 class="Ski">Skills</h1></div>
-      <div class="container">
-      <div class="box">
-        <img src="images/frame.png"  width="100" height="100">
-        <h4>Framework</h4>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias, quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit eaque ab odio reiciendis, corporis quasi repellat sed. </P>
-   
-    </div>
-      </div>
-      <div class="box2">
-        <img src="images/db.png"  width="100" height="100">
-        <h4>Database</h4>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias, quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit eaque ab odio reiciendis, corporis quasi repellat sed. </P>
+    </div> -->
+    <div id="skills">
+        
+        <div class="wrapper">
+            <h1 class="Ski">Skills</h1>
+        </div>
+        
+        <div class="flex-box-container">
+    
+            <div class="box">
+                <img src="images/frame.png" width="100" height="100" />
+                <h4>Framework</h4>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias,
+                    quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur
+                    velit eaque ab odio reiciendis, corporis quasi repellat sed.
+                </P>
+            </div>
+
+            <div class="box">
+        
+                <img src="images/db.png" width="100" height="100" />
+                <h4>Database</h4>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias,
+                    quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit
+                    eaque ab odio reiciendis, corporis quasi repellat sed.
+                </P>
+
+            </div>
+
+            <div class="box">
+        
+                <img src="images/web.png" width="100" height="100" />
+                <h4>Web Development</h4>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias,
+                    quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit
+                    eaque ab odio reiciendis, corporis quasi repellat sed.
+                </P>
+
+            </div>
+
+            <div class="box">
+
+                <img src="images/android.png" width="100" height="100" />
+                <h4>Android</h4>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias,
+                    quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit
+                    eaque ab odio reiciendis, corporis quasi repellat sed.
+                </P>
+
+            </div>
+        </div>
 
     </div>
-    <div class="box3">
-        <img src="images/web.png"  width="90" height="90">
-        <h4>Web Development</h4>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias, quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit eaque ab odio reiciendis, corporis quasi repellat sed. </P>
 
-    </div>
-    <div class="box4">
-        <img src="images/android.png"  width="90" height="90">
-        <h4>Android</h4>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias, quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit eaque ab odio reiciendis, corporis quasi repellat sed. </P>
-
-    </div>
-    </section>
-    <section id="contact">
+    <div id="contact">
         <div class="contactme">
             <h1 class="cm">Contact Me</h1>
-           <form action="submit_form.php" method="POST">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
-
-  <input type="submit" value="Submit">
-</form>
-
-    </section>
     <script>
-      const navLinks = document.querySelectorAll("nav ul li a");
+        const navLinks = document.querySelectorAll("nav ul li a");
 
-// Add click event listeners to each navbar link
-navLinks.forEach(link => {
-    link.addEventListener("click", function (event) {
-        event.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        target.scrollIntoView({
-            behavior: "smooth"
+        // Add click event listeners to each navbar link
+        navLinks.forEach(link => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
         });
-    });
-});
     </script>
-</main>   
 </body>
 
 </html>
