@@ -4,30 +4,6 @@
     box-sizing: border-box;
     transition: .2s linear;
 }
-body {
-  margin-right: 0; /* Remove the right margin */
-}
-
-nav {
-  /* Adjust the space around the navigation links */
-  justify-content: flex-end;
-  padding-right: 20px;
-}
-
-#Home > div {
-  width: 30%;
-  margin-right: 20px; /* Adjust the right margin as needed */
-}
-
-.right img {
-  width: 100%; /* Adjust the width of the image as needed */
-  margin-left: 0; /* Remove the negative left margin */
-}
-
-.wrapper {
-  padding-right: 10%; /* Adjust the right padding as needed */
-}
-
 section{
     width: 100%;
     min-height: 80vh;
@@ -342,8 +318,51 @@ height: 150vh;
 
 .cm{
     color:cyan;
-        position: relative;
-    left: 550px;
-    font-size: 60px;
+        position: absolute;
+    left: 520px;
+   top:2000px;
+    font-size: 80px;
    
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.contactme {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* .contactme .cm {
+  font-size: 40px;
+  margin-bottom: 20px;
+} */
+
+.contactme label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contactme input,
+.contactme textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.contactme input[type="submit"] {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contactme input[type="submit"]:hover {
+  background-color: darkorange;
 }
