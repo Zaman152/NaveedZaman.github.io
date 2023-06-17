@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: slategray;
     color: aliceblue;
     display: flex;
     flex-direction: column;
@@ -22,6 +22,7 @@ nav {
     background-color: darkslategrey;
     position: fixed;
     width: 100%;
+    font-size: 3vw;
     z-index: 1;
 }
 
@@ -32,7 +33,7 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    margin: 0 23px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -41,7 +42,12 @@ nav ul li a {
 }
 
 .left {
-    font-size: 1.5rem;
+    text-align: left;
+    margin-right: auto;
+}
+.right {
+    text-align: left;
+    margin-left: auto;
 }
 
 span {
@@ -53,15 +59,57 @@ span {
     justify-content: space-around;
 }
 
-.Intro{
+.Intro {
     text-align: center;
 }
+
+#typing-text-pc {
+    border-right: 1px solid orange;
+    /* Change the border color to orange */
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: xx-large;
+    animation: typing 2s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+#typing-text-phone {
+    border-right: 1px solid orange;
+    /* Change the border color to orange */
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: xx-large;
+    animation: typing 2s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+        /* Change the border color to orange */
+    }
+}
+
 .Iam {
     font-size: 2.5rem;
     color: #727272;
 }
 
-.Web {
+#element {
     color: darkslategrey;
     font-size: 3rem;
     padding-bottom: 10px;
@@ -72,6 +120,7 @@ span {
     background-color: orange;
     font-size: x-large;
     color: white;
+    margin: 40px 0px;
     padding: 10px 25px;
 }
 
@@ -127,7 +176,7 @@ span {
 }
 
 .box {
-    
+
     display: inline-block;
     padding: 15px;
     width: 300px;
@@ -186,7 +235,7 @@ span {
 .contactme label {
     display: block;
     margin-bottom: 10px;
-    
+
 }
 
 .contactme input,
@@ -239,7 +288,7 @@ span {
 }
 
 #AboutMe {
-    
+
     height: auto;
     padding: 100px;
 }
@@ -249,100 +298,142 @@ span {
     justify-content: space-around;
 }
 
-#skills{
+#skills {
     padding-top: 80px;
     padding-bottom: 120px;
     background-color: #fff;
-}   
-.spaceAround{
+}
+
+.spaceAround {
     justify-content: space-around;
 }
 
-#homeImg{
+#homeImg {
     margin-top: 8vw;
     margin-bottom: 5vw;
     width: 50vh;
 }
 
 @media screen and (max-width: 768px) {
+
     /* for phone */
     .flex-box-container {
         flex-direction: column;
     }
-    #contact{
+
+    #contact {
         padding: 50px;
     }
-    .cm{
+
+    .cm {
         font-size: xx-large;
     }
-    .box{
+
+    .box {
         margin-right: auto;
         margin-left: auto;
         display: block;
         margin-bottom: 50px;
     }
-    #head{
-        display: none;
+
+    #head {
+        display: flex;
     }
-    .Iam{
-        font-size:xx-large;
+
+    .Iam {
+        font-size: xx-large;
     }
-    .Web{
-        font-size:xx-large;
+    nav{
+        padding: 0px 10px;
+        font-size: 3vw;
     }
-    #AboutMe{
+    nav ul li {
+        list-style: none;
+        margin: 0 10px;
+    }
+    #element {
+        display: inline-block;
+        /* transition: transform 0.2s linear; */
+    }
+
+    #AboutMe {
         padding: 10px;
     }
-    .btn{
+
+    .btn {
         display: none;
     }
-    #homeImg{
+
+    #homeImg {
         width: 40vh;
     }
-    #home{
+
+    #home {
         flex-direction: column-reverse;
         height: 100%;
     }
-    .phone{
+
+    .phone {
         display: flex;
         flex-direction: column;
     }
-    .pc{
+
+    .pc {
         display: none !important;
     }
-    .abtImg{
+
+    .abtImg {
         width: 100%;
         height: auto;
     }
-    .paragraph{
+
+    .paragraph {
         text-align: center;
     }
 }
+
 @media screen and (min-width: 768px) {
+
     /* for pc */
     .flex-box-container {
         flex-direction: row;
     }
-    .box{
+
+    .box {
         display: inline-block;
         padding-top: 20px;
     }
-    #head{
+
+    #head {
         display: flex;
     }
-    #homeImg{
+
+    #homeImg {
         width: 50vh;
     }
-    #home{
+
+    #home {
         flex-direction: row;
     }
-    .pc{
+
+    .pc {
         display: flex;
     }
-    .phone{
+
+    nav{
+        padding: 0px 100px;
+        font-size: 1.3vw;
+    }
+    nav ul li {
+        list-style: none;
+        margin: 0 20px;
+    }
+    .phone {
         display: none !important;
     }
-    .abtImg{
+
+    
+    .abtImg {
         width: 400px;
         height: 400px;
     }

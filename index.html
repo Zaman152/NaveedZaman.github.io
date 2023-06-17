@@ -16,35 +16,56 @@
 
         <nav>
 
-            <div class="left">Naveed Zaman<span> Khan</span> </div>
-            <div class="right"></div>
-            <ul>
+            <div class="left">   Naveed Zaman <span>Khan</span> </div>
+            
+            <div class="right">
+                <ul>
 
-                <li><a href="#head">Home</a></li>
-                <li><a href="#AboutMe">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#head">Home</a></li>
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
 
-            </ul>
-
+                </ul>
+            </div>
         </nav>
 
     </header>
+<!-- 
+    <header id="head phone">
+
+        <nav style="width: 100%;">
+            <div class="left">Naveed Zaman <span>Khan</span> </div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="#head">Home</a></li>
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header> -->
 
     <div id="home" class="flex-box-container pc">
-            
-        <div style="margin-top: 15vw;">
+
+        <div style="margin-top: 20vw;width: 20%;">
             <h4 class="Iam">
                 I'm a
             </h4>
 
-            <h3 class="Web">
-                Software Engineer
-            </h3>
+            <div style="padding-bottom: 20px;display: block;">
+                <span id="typing-text-pc"></span>
+            </div>
+            
+            
 
             <a href="#contact" class="btn">
                 Contact Me
-            </a>    
+            </a>
         </div>
 
         <div style="margin-top: 8vw;margin-bottom: 5vw;">
@@ -53,36 +74,38 @@
 
     </div>
 
-    <div id="home" class="flex-box-container phone">
+    <div id="home" style="padding-top: 50px;" class="flex-box-container phone">
 
         <div style="margin-left: auto;margin-right: auto;">
             <img id="homeImg" src="images/web2.png" alt="developer" />
         </div>
-            
+
         <div class="Intro" style="margin-top: 15vw;">
             <h4 class="Iam">
                 I'm a
             </h4>
 
-            <h3 class="Web">
-                Software Engineer
+            <div style="padding-bottom: 20px;display: block;">
+                <span id="typing-text-phone"></span>
+            </div>
+
             </h3>
 
             <a href="#contact" class="btn">
                 Contact Me
-            </a>    
+            </a>
         </div>
 
     </div>
 
-    <div id="AboutMe" class="phone">
+    <div id="AboutMe">
 
-        <div>
+        <div class="phone">
             <h1 class="Abt">About Me</h1>
         </div>
 
-        <div style="padding-top: 50px;">
-            
+        <div style="padding-top: 50px;" class="phone">
+
             <div>
                 <div class="paragraph">
                     <p>
@@ -96,24 +119,21 @@
                         eCIB reporting and to mitigate any sort of stakeholders’ requirements.
                     </p>
                 </div>
-            
+
             </div>
-            
+
             <div>
                 <img src="images/walidsb.png" class="abtImg" alt="developer" />
             </div>
-            
-        </div>
 
-    </div>
-    <div id="AboutMe" class="pc">
+        </div>
 
         <div>
-            <h1 class="Abt">About Me</h1>
+            <h1 class="Abt pc" style="display: block;">About Me</h1>
         </div>
 
-        <div style="padding-top: 50px;" class="flex-container">
-            
+        <div style="padding-top: 50px;" class="flex-container pc">
+
             <div class="flex-child">
                 <div class="paragraph">
                     <p>
@@ -126,53 +146,57 @@
                         used for SBP regulatory reporting & inspection, Analytics, internal & external auditors,
                         eCIB reporting and to mitigate any sort of stakeholders’ requirements.
                     </p>
-                </div>
-            
             </div>
-            
+
+            </div>
+
             <div class="flex-child">
                 <img src="images/walidsb.png" class="abtImg" alt="developer" />
             </div>
-            
+
         </div>
 
     </div>
     <div id="skills">
-        
+
         <div class="wrapper">
             <h1 class="Ski">Skills</h1>
         </div>
-        
+
         <div class="flex-box-container">
-    
+
             <div class="box">
                 <img src="images/frame.png" />
                 <h4>Framework</h4>
                 <P>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias,
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo
+                    molestias,
                     quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur
                     velit eaque ab odio reiciendis, corporis quasi repellat sed.
                 </P>
             </div>
 
             <div class="box">
-        
+
                 <img src="images/db.png" />
                 <h4>Database</h4>
                 <P>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias,
-                    quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo
+                    molestias,
+                    quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur
+                    velit
                     eaque ab odio reiciendis, corporis quasi repellat sed.
                 </P>
 
             </div>
 
             <div class="box">
-        
+
                 <img src="images/web.png" />
                 <h4>Web Development</h4>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias,
-                    quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit
+                    quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur
+                    velit
                     eaque ab odio reiciendis, corporis quasi repellat sed.
                 </P>
 
@@ -183,7 +207,8 @@
                 <img src="images/android.png" />
                 <h4>Android</h4>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias,
-                    quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit
+                    quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur
+                    velit
                     eaque ab odio reiciendis, corporis quasi repellat sed.
                 </P>
 
@@ -193,11 +218,11 @@
     </div>
 
     <div id="contact">
- 
+
         <div class="contactme">
- 
+
             <h1 class="cm">Contact Me</h1>
- 
+
             <form action="submit_form.php" method="POST">
 
                 <label for="name">Name:</label>
@@ -216,21 +241,8 @@
         </div>
 
     </div>
-
-    <script>
-        const navLinks = document.querySelectorAll("nav ul li a");
-
-        // Add click event listeners to each navbar link
-        navLinks.forEach(link => {
-            link.addEventListener("click", function (event) {
-                event.preventDefault();
-                const target = document.querySelector(this.getAttribute("href"));
-                target.scrollIntoView({
-                    behavior: "smooth"
-                });
-            });
-        });
-    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./index.js" ></script>
 </body>
 
 </html>
