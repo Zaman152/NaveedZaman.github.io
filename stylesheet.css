@@ -146,6 +146,10 @@ span {
     box-shadow: 0px 5px 10px black;
 }
 
+.box img {
+    height: 100px;
+    width: 100px;
+}
 
 .box h4 {
     color: orange;
@@ -249,4 +253,32 @@ span {
 }   
 .spaceAround{
     justify-content: space-around;
+}
+
+#homeImg{
+    width: 50vh;
+}
+
+@media screen and (max-width: 768px) {
+    #head{
+        display: none;
+    }
+    #homeImg{
+        width: 30vh;
+    }
+    #home{
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 768px) {
+    #head{
+        display: flex;
+    }
+    #homeImg{
+        width: 50vh;
+    }
+    #home{
+        flex-direction: column-reverse;
+
+    }
 }
