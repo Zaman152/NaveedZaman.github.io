@@ -127,6 +127,7 @@ span {
 }
 
 .box {
+    
     display: inline-block;
     padding: 15px;
     width: 300px;
@@ -265,6 +266,21 @@ span {
 
 @media screen and (max-width: 768px) {
     /* for phone */
+    .flex-box-container {
+        flex-direction: column;
+    }
+    #contact{
+        padding: 50px;
+    }
+    .cm{
+        font-size: xx-large;
+    }
+    .box{
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        margin-bottom: 50px;
+    }
     #head{
         display: none;
     }
@@ -281,24 +297,36 @@ span {
         display: none;
     }
     #homeImg{
-        width: 30vh;
+        width: 40vh;
     }
     #home{
         flex-direction: column-reverse;
+        height: 100%;
     }
     .phone{
         display: flex;
         flex-direction: column;
     }
     .pc{
-        display: none;
+        display: none !important;
     }
     .abtImg{
         width: 100%;
+        height: auto;
+    }
+    .paragraph{
+        text-align: center;
     }
 }
 @media screen and (min-width: 768px) {
     /* for pc */
+    .flex-box-container {
+        flex-direction: row;
+    }
+    .box{
+        display: inline-block;
+        padding-top: 20px;
+    }
     #head{
         display: flex;
     }
