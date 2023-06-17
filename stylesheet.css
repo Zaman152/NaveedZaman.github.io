@@ -53,7 +53,9 @@ span {
     justify-content: space-around;
 }
 
-
+.Intro{
+    text-align: center;
+}
 .Iam {
     font-size: 2.5rem;
     color: #727272;
@@ -71,14 +73,6 @@ span {
     font-size: x-large;
     color: white;
     padding: 10px 25px;
-}
-
-#AboutMe {
-    margin: 0;
-    padding: 0;
-    background-color: darkslategrey;
-    width: 100%;
-    height: 150vh;
 }
 
 
@@ -112,13 +106,9 @@ span {
     width: 45%;
 }
 
-#skills {
-    background-color: lightgrey;
-}
-
 .Ski {
     text-align: center;
-    color: slategray;
+    color: darkslategrey;
     font-size: 60px;
     padding-bottom: 40px;
 }
@@ -168,16 +158,14 @@ span {
 #contact {
     margin: 0;
     padding: 0;
-    background-color: rgb(132, 148, 165);
+    background-color: darkslategray;
     width: 100%;
     height: 150vh;
 }
 
 
 .cm {
-    color: cyan;
-    left: 520px;
-    top: 2000px;
+    color: white;
     font-size: 80px;
 }
 
@@ -197,6 +185,7 @@ span {
 .contactme label {
     display: block;
     margin-bottom: 10px;
+    
 }
 
 .contactme input,
@@ -235,9 +224,21 @@ span {
     display: block;
     margin-left: auto;
     padding: 20px;
+    height: 400px;
+    width: 400px;
 }
 
 #AboutMe {
+    margin: 0;
+    padding: 0;
+    background-color: darkslategrey;
+    width: 100%;
+    height: 150vh;
+    display: block;
+}
+
+#AboutMe {
+    
     height: auto;
     padding: 100px;
 }
@@ -250,27 +251,54 @@ span {
 #skills{
     padding-top: 80px;
     padding-bottom: 120px;
+    background-color: #fff;
 }   
 .spaceAround{
     justify-content: space-around;
 }
 
 #homeImg{
+    margin-top: 8vw;
+    margin-bottom: 5vw;
     width: 50vh;
 }
 
 @media screen and (max-width: 768px) {
+    /* for phone */
     #head{
+        display: none;
+    }
+    .Iam{
+        font-size:xx-large;
+    }
+    .Web{
+        font-size:xx-large;
+    }
+    #AboutMe{
+        padding: 10px;
+    }
+    .btn{
         display: none;
     }
     #homeImg{
         width: 30vh;
     }
     #home{
-        flex-direction: row;
+        flex-direction: column-reverse;
+    }
+    .phone{
+        display: flex;
+        flex-direction: column;
+    }
+    .pc{
+        display: none;
+    }
+    .abtImg{
+        width: 100%;
     }
 }
 @media screen and (min-width: 768px) {
+    /* for pc */
     #head{
         display: flex;
     }
@@ -278,7 +306,16 @@ span {
         width: 50vh;
     }
     #home{
-        flex-direction: column-reverse;
-
+        flex-direction: row;
+    }
+    .pc{
+        display: flex;
+    }
+    .phone{
+        display: none !important;
+    }
+    .abtImg{
+        width: 400px;
+        height: 400px;
     }
 }
