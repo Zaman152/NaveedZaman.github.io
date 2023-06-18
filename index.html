@@ -1,120 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet.css">
-</head> 
-<body>
-    <header>
-    <nav>
-        <div class="left">Naveed Zaman<span> Khan</span> </div>
-        <div class="right"></div>
-        <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#AboutMe">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
 
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+
+  <header id="head">
+
+    <nav>
+
+      <div class="left"> Naveed Zaman <span>Khan</span> </div>
+
+      <div class="right">
+        <ul>
+
+          <li><a href="#head">Home</a></li>
+          <li><a href="#AboutMe">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+
+        </ul>
+      </div>
     </nav>
 
-</header>
-    <section id="Home">
-        <div class="left">
-            <h4><span class="Iam"> I'm a</span></h4>
-        </div>
-            <div>
-                <h3><span class="Web">Software Engineer</span></h3>
+  </header>
+  <!-- 
+    <header id="head phone">
+
+        <nav style="width: 100%;">
+            <div class="left">Naveed Zaman <span>Khan</span> </div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="#head">Home</a></li>
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+
+                </ul>
             </div>
-    <div>  <a href="#contact" class="btn">Contact Me</a></div>
-       
-        <div class="right">
-        <img src="images/web2.png" alt="developer" />
-             </div>
+        </nav>
 
-    </section>
-    <section id="AboutMe">
-        <div class="left2">
-            <h1 class="Abt">About Me</h1>
-           <div class="paragraph"><p>
-                My Name Is Naveed Zaman Khan.
-                Currently I am serving in I3RL.
-                Before this i served in MCB Bank Ltd as FVP since 2006. 21 years rich experience of SBP
-                regulatory reporting, MIS/Database developments and Software development & deployment. 
-                In leading institutions of Pakistan.                
-                Proficient in developing and managing Bank’s Management Information System (MIS) to be 
-                used for SBP regulatory reporting & inspection, Analytics, internal & external auditors,
-                eCIB reporting and to mitigate any sort of stakeholders’ requirements.
-                
-            </p></div> 
-        </div>
-        <div class="right2">
-            <img src="images/walidsb.png" alt="developer"width="400" height="400"/>
-        </div>
-    </section>
-    <section id="skills">
-      <div class="wrapper">  <h1 class="Ski">Skills</h1></div>
-      <div class="container">
-      <div class="box">
-        <img src="images/frame.png"  width="100" height="100">
-        <h4>Framework</h4>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias, quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit eaque ab odio reiciendis, corporis quasi repellat sed. </P>
-   
-    </div>
+    </header> -->
+
+  <div id="home" class="flex-box-container pc">
+
+    <div style="margin-top: 20vw;width: 20%;">
+      <h4 class="Iam">
+        I'm a
+      </h4>
+
+      <div style="padding-bottom: 20px;display: block;">
+        <span id="typing-text-pc"></span>
       </div>
-      <div class="box2">
-        <img src="images/db.png"  width="100" height="100">
+
+
+
+      <a href="#contact" class="btn">
+        Contact Me
+      </a>
+    </div>
+
+    <div style="margin-top: 8vw;margin-bottom: 5vw;">
+      <img id="homeImg" src="images/web2.png" alt="developer" />
+    </div>
+
+  </div>
+
+  <div id="home" style="padding-top: 50px;" class="flex-box-container phone">
+
+    <div style="margin-left: auto;margin-right: auto;">
+      <img id="homeImg" src="images/web2.png" alt="developer" />
+    </div>
+
+    <div class="Intro" style="margin-top: 15vw;">
+      <h4 class="Iam">
+        I'm a
+      </h4>
+
+      <div style="padding-bottom: 20px;display: block;">
+        <span id="typing-text-phone"></span>
+      </div>
+
+      </h3>
+
+      <a href="#contact" class="btn">
+        Contact Me
+      </a>
+    </div>
+
+  </div>
+
+  <div id="AboutMe">
+
+    <div class="phone">
+      <h1 class="Abt">About Me</h1>
+    </div>
+
+    <div style="padding-top: 50px;" class="phone">
+
+      <div>
+        <div class="paragraph">
+          <p>
+            My Name Is Naveed Zaman Khan.
+            Currently I am serving in I3RL.
+            Before this i served in MCB Bank Ltd as FVP since 2006. 21 years rich experience of SBP
+            regulatory reporting, MIS/Database developments and Software development & deployment.
+            In leading institutions of Pakistan.
+            Proficient in developing and managing Bank’s Management Information System (MIS) to be
+            used for SBP regulatory reporting & inspection, Analytics, internal & external auditors,
+            eCIB reporting and to mitigate any sort of stakeholders’ requirements.
+          </p>
+        </div>
+
+      </div>
+
+      <div>
+        <img src="images/walidsb.png" class="abtImg" alt="developer" />
+      </div>
+
+    </div>
+
+    <div>
+      <h1 class="Abt pc" style="display: block;">About Me</h1>
+    </div>
+
+    <div style="padding-top: 50px;" class="flex-container pc">
+
+      <div class="flex-child">
+        <div class="paragraph">
+          <p>
+            My Name Is Naveed Zaman Khan.
+            Currently I am serving in I3RL.
+            Before this i served in MCB Bank Ltd as FVP since 2006. 21 years rich experience of SBP
+            regulatory reporting, MIS/Database developments and Software development & deployment.
+            In leading institutions of Pakistan.
+            Proficient in developing and managing Bank’s Management Information System (MIS) to be
+            used for SBP regulatory reporting & inspection, Analytics, internal & external auditors,
+            eCIB reporting and to mitigate any sort of stakeholders’ requirements.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="flex-child">
+        <img src="images/walidsb.png" class="abtImg" alt="developer" />
+      </div>
+
+    </div>
+
+  </div>
+  <div id="skills">
+
+    <div class="wrapper">
+      <h1 class="Ski">Skills</h1>
+    </div>
+
+    <div class="flex-box-container">
+
+      <div class="box">
+        <img src="images/frame.png" />
+        <h4>Framework</h4>
+        <P>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo
+          molestias,
+          quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur
+          velit eaque ab odio reiciendis, corporis quasi repellat sed.
+        </P>
+      </div>
+
+      <div class="box">
+
+        <img src="images/db.png" />
         <h4>Database</h4>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias, quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit eaque ab odio reiciendis, corporis quasi repellat sed. </P>
+        <P>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo
+          molestias,
+          quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur
+          velit
+          eaque ab odio reiciendis, corporis quasi repellat sed.
+        </P>
 
-    </div>
-    <div class="box3">
-        <img src="images/web.png"  width="90" height="90">
+      </div>
+
+      <div class="box">
+
+        <img src="images/web.png" />
         <h4>Web Development</h4>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias, quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit eaque ab odio reiciendis, corporis quasi repellat sed. </P>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias,
+          quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur
+          velit
+          eaque ab odio reiciendis, corporis quasi repellat sed.
+        </P>
 
-    </div>
-    <div class="box4">
-        <img src="images/android.png"  width="90" height="90">
+      </div>
+
+      <div class="box">
+
+        <img src="images/android.png" />
         <h4>Android</h4>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias, quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur velit eaque ab odio reiciendis, corporis quasi repellat sed. </P>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis magni! Iusto nemo molestias,
+          quam esse exercitationem aspernatur explicabo expedita alias, delectus culpa adipisci consequatur
+          velit
+          eaque ab odio reiciendis, corporis quasi repellat sed.
+        </P>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="contact">
+
+    <div class="contactme">
+
+      <h1 class="cm">Contact Me</h1>
+
+      <form action="submit_form.php" method="POST">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Submit" />
+
+      </form>
 
     </div>
-    </section>
-    <section id="contact">
-        <div class="contactme">
-            <h1 class="cm">Contact Me</h1>
-           <form action="submit_form.php" method="POST">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
-
-  <input type="submit" value="Submit">
-</form>
-
-    </section>
-    <script>
-      const navLinks = document.querySelectorAll("nav ul li a");
-
-// Add click event listeners to each navbar link
-navLinks.forEach(link => {
-    link.addEventListener("click", function (event) {
-        event.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        target.scrollIntoView({
-            behavior: "smooth"
-        });
-    });
-});
-    </script>
-</main>   
+  </div>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
